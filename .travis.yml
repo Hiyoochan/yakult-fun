@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "lts/*"
+
+install:
+  - npm i
+
+script:
+  - hexo g
+
+after_success:
+  - repo=https://$GITHUB_TOKEN@github.com/kotete/kotete.github.io.git
+  - sed -i "s/git@github.com:kotete\/kotete.github.io.git/https:\/\/$GITHUB_TOKEN@github.com\/kotete\/kotete.github.io.git/g" _config.yml
+  - git clone $repo .deploy_git
+  - hexo d
