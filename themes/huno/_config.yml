@@ -1,0 +1,21 @@
+# Header
+menu:
+  blog: /#blog
+  about: /about
+  archive: /archive
+
+top_saying: Microcapability certification:Yakult Connoisseur/Bubble Maker/Tear Faucet/KH Wielder
+# Site favicon
+favicon: /images/favicon3.ico
+
+# Site logo
+logo: /images/logo.jpg
+
+# Enable Mathjax
+mathjax: true
+
+# Enable awesome-toc
+awesome_toc: true
+
+# Enable githubRepoWidget
+github_repo_widget: false
